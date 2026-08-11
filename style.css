@@ -136,7 +136,7 @@ body {
   border-radius: 24px;
 }
 
-/* Indicators */
+Indicators
 .carousel-indicators [data-bs-target] {
   background-color: #000;
   width: 12px;
@@ -370,8 +370,8 @@ h2 {
   box-shadow: 0 12px 30px rgba(0,0,0,0.15);
 }
 
-/* Carousel Indicators */
-.carousel-indicators [data-bs-target] {
+/*============================= Carousel Indicators ======================*/
+/* .carousel-indicators [data-bs-target] {
   background-color: #000;
   width: 8px;
   height: 8px;
@@ -379,9 +379,13 @@ h2 {
 }
 .carousel-indicators .active {
   background-color: #0d6efd;
+} */
+
+.carousel-indicators {
+    display: none !important;
 }
 
-/* Car cards ka height adjust */
+/* ====================Car cards ka height adjust ===============================*/
 #pic .card img {
   height: 200px;   /* yaha tum apni marzi ka height set kar sakte ho (default: 200px) */
   object-fit: cover;
@@ -391,14 +395,14 @@ h2 {
   min-height: 350px;  /* card ki total height control */
 }
 
-/* Car card images height fix */
+/* ===================Car card images height fix =====================*/
 #pic .card img {
   height: 250px;   /* Adjust apne hisaab se */
   object-fit: cover;
   transition: transform 1s ease-in-out;
 }
 
-/* Card hover zoom + shadow */
+/*====================== Card hover zoom + shadow =======================*/
 #pic .card {
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
