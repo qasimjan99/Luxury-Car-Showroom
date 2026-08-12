@@ -17,15 +17,15 @@ slides.forEach(slide => {
 // Bootstrap event when slide changes
 const carousel = document.getElementById("carCarousel");
 if (carousel) {
-carousel.addEventListener("slide.bs.carousel", (event) => {
-  const nextSlideImg = event.relatedTarget.querySelector("img");
+  carousel.addEventListener("slide.bs.carousel", (event) => {
+    const nextSlideImg = event.relatedTarget.querySelector("img");
 
-  // Remove old animations
-  animations.forEach(anim => nextSlideImg.classList.remove(anim));
+    // Remove old animations
+    animations.forEach(anim => nextSlideImg.classList.remove(anim));
 
-  // Apply new random animation
-  applyRandomAnimation(nextSlideImg);
-});
+    // Apply new random animation
+    applyRandomAnimation(nextSlideImg);
+  });
 }
 
 function applyRandomAnimation(element) {
