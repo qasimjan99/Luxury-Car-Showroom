@@ -1417,7 +1417,7 @@ img.rounded.shadow:hover {
 
 /* =========================================================
    FINAL RESPONSIVE / PRESENTATION POLISH
-   Added without replacing the original project styling.
+  
    ========================================================= */
 
 html {
@@ -2000,107 +2000,249 @@ iframe {
   }
 }
 
-/* ==================================== CARS DETAIL PAGE PICTURE SIZE================================ */
+/* ==================carsdetial.html page ke row picture size equal kaya hai===========*/
 
 .car-img-thumb {
-  width: 100%;
-  /* Column ki full width le ga */
-  height: 250px;
-  /* Teeno images ki height bilkul fixed 250px ho jayegi */
-  object-fit: cover;
-  /* Image stretch ya distort nahi hogi aur perfectly crop ho jayegi */
-  border-radius: 8px;
-  /* Corners smooth karne ke liye (Optional) */
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .car-img-thumb {
+        height: 250px;
+    }
+}
+
+/*************************** care 1 Carousel **********************/
+
+/* ================= CAR CARD ================= */
+
+.car-card {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
 
-/* /*==================== one by one cars details show by click the button *===============/ */
+/* ================= CAROUSEL ================= */
 
-/* .wrapper {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+.carousel {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    background: #111;
 }
 
-.inner {
-  --w: 100px;
-  --h: 150px;
-  --translateZ: calc((var(--w) + var(--h)) + 0px);
-  --rotateX: -15deg;
-  --perspective: 1000px;
-  position: absolute;
-  width: var(--w);
-  height: var(--h);
-  top: 25%;
-  left: calc(50% - (var(--w) / 2) - 2.5px);
-  z-index: 2;
-  transform-style: preserve-3d;
-  transform: perspective(var(--perspective));
-  animation: rotating 20s linear infinite;
+
+/* ================= IMAGES ================= */
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
 }
 
-@keyframes rotating {
-  from {
-    transform: perspective(var(--perspective)) rotateX(var(--rotateX)) rotateY(0);
-  }
-  to {
-    transform: perspective(var(--perspective)) rotateX(var(--rotateX)) rotateY(1turn);
-  }
-} */
 
-/* Changed .card to .CAR1 */
-/* .CAR1 {
-  position: absolute;
-  border: 2px solid rgba(var(--color-card));
-  border-radius: 12px;
-  overflow: hidden;
-  inset: 0;
-  transform: rotateY(calc((360deg / var(--quantity)) * var(--index))) translateZ(var(--translateZ));
+/* Active Image */
+
+.carousel-image.active {
+    opacity: 1;
 }
 
-.img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background: #0000
-    radial-gradient(
-      circle,
-      rgba(var(--color-card), 0.2) 0%,
-      rgba(var(--color-card), 0.6) 80%,
-      rgba(var(--color-card), 0.9) 100%
-    );
-} */
 
-/* Image styling to fit inside CAR1 */
-/* .CAR1 .img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
+/* ================= ARROWS ================= */
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 48px;
+    height: 48px;
+
+    border: none;
+    border-radius: 20%;
+
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 10;
+
+    transition: 0.3s;
+}
+
+
+/* Left */
+
+.carousel-btn.prev {
+    left: 20px;
+}
+
+
+/* Right */
+
+.carousel-btn.next {
+    right: 20px;
+}
+
+
+/* Hover */
+
+.carousel-btn:hover {
+    background: #000;
+    transform: translateY(-50%) scale(1.08);
+}
+
+
+/* ================= DOTS ================= */
+
+.carousel-dots {
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    background: #ffffff;
+}
+
+
+/* Dot */
+
+.dot {
+    width: 10px;
+    height: 10px;
+
+    background: #ccc;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Active Dot */
+
+.dot.active {
+    background: #111;
+    transform: scale(1.2);
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 768px) {
+
+    .car-card {
+        width: 100%;
+        margin: 15px auto;
+        border-radius: 10px;
+    }
+
+    .carousel {
+        height: 400px;
+    }
+
+    .carousel-btn {
+        width: 42px;
+        height: 42px;
+        font-size: 23px;
+    }
+
+    .carousel-btn.prev {
+        left: 12px;
+    }
+
+    .carousel-btn.next {
+        right: 12px;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 480px) {
+
+    .carousel {
+        height: 280px;
+    }
+
+    .carousel-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 20px;
+    }
+
+    .carousel-btn.prev {
+        left: 8px;
+    }
+
+    .carousel-btn.next {
+        right: 8px;
+    }
+
+    .carousel-dots {
+        height: 40px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+/* ========================car1.html page CARS DETAIL PAGE circle PICTURE ========================== */
 
 .wrapper {
   width: 100%;
-  min-height: 420px;
+  min-height: 320px;
   position: relative;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-color: #121212;
+  background-color: #ffffff;
 }
+
 
 .inner {
   --w: 120px;
   --h: 170px;
-  --translateZ: calc((var(--w) + var(--h)) + 30px);
+
+  /* Cards ko paas lane ke liye */
+  --translateZ: 180px;
+
   --rotateX: -15deg;
   --perspective: 1000px;
+
   position: absolute;
   width: var(--w);
   height: var(--h);
@@ -2109,19 +2251,28 @@ iframe {
   margin-top: calc(var(--h) / -2);
   margin-left: calc(var(--w) / -2);
   z-index: 2;
+
   transform-style: preserve-3d;
   transform: perspective(var(--perspective));
+
   animation: rotating 20s linear infinite;
 }
 
+
 @keyframes rotating {
   from {
-    transform: perspective(var(--perspective)) rotateX(var(--rotateX)) rotateY(0deg);
+    transform: perspective(var(--perspective))
+               rotateX(var(--rotateX))
+               rotateY(0deg);
   }
+
   to {
-    transform: perspective(var(--perspective)) rotateX(var(--rotateX)) rotateY(360deg);
+    transform: perspective(var(--perspective))
+               rotateX(var(--rotateX))
+               rotateY(360deg);
   }
 }
+
 
 .CAR1 {
   position: absolute;
@@ -2129,16 +2280,24 @@ iframe {
   border-radius: 12px;
   overflow: hidden;
   inset: 0;
-  transform: rotateY(calc((360deg / var(--quantity)) * var(--index))) translateZ(var(--translateZ));
+
+  transform:
+    rotateY(calc((360deg / var(--quantity)) * var(--index)))
+    translateZ(var(--translateZ));
+
   background: #111;
-  box-shadow: 0 0 15px rgba(var(--color-card), 0.3);
+
+  box-shadow:
+    0 0 15px rgba(var(--color-card), 0.3);
 }
+
 
 .img {
   width: 100%;
   height: 100%;
   position: relative;
 }
+
 
 .CAR1 .img img {
   width: 100%;
@@ -2147,32 +2306,46 @@ iframe {
   display: block;
 }
 
+
 /* ================= MOBILE RESPONSIVE MEDIA QUERIES ================= */
 
-/* Tablets / Medium Mobile Screens (Up to 768px) */
+
+/* Tablets / Medium Mobile Screens */
 @media (max-width: 768px) {
+
   .inner {
     --w: 90px;
     --h: 130px;
-    --translateZ: 180px;
+
+    /* Pehle 180px tha */
+    --translateZ: 150px;
+
     --perspective: 700px;
   }
+
   .wrapper {
     min-height: 350px;
   }
 }
 
-/* Small Mobile Screens (Up to 480px) */
+
+/* Small Mobile Screens */
 @media (max-width: 480px) {
+
   .inner {
     --w: 65px;
     --h: 95px;
-    --translateZ: 130px;
+
+    /* Pehle 130px tha */
+    --translateZ: 105px;
+
     --perspective: 500px;
   }
+
   .wrapper {
     min-height: 280px;
   }
+
   .CAR1 {
     border-width: 1.5px;
     border-radius: 6px;
