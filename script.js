@@ -65,3 +65,69 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+
+
+// =======****************========== CAR 1 CAROUSEL =====**************************============
+
+let currentImage = 0;
+
+const images = document.querySelectorAll("#CAR1 .carousel-image");
+const dots = document.querySelectorAll("#CAR1 .dot");
+
+
+// Show Image
+function showImage(index) {
+
+    // Agar last ke baad first image
+    if (index >= images.length) {
+        index = 0;
+    }
+
+    // Agar first se pehle last image
+    if (index < 0) {
+        index = images.length - 1;
+    }
+
+    currentImage = index;
+
+
+    // Sab images hide
+    images.forEach(function(image) {
+        image.classList.remove("active");
+    });
+
+
+    // Sab dots inactive
+    dots.forEach(function(dot) {
+        dot.classList.remove("active");
+    });
+
+
+    // Current image show
+    images[currentImage].classList.add("active");
+
+
+    // Current dot active
+    dots[currentImage].classList.add("active");
+}
+
+
+// Next / Previous
+function changeImage(direction) {
+
+    showImage(currentImage + direction);
+
+}
+
+
+// ================= AUTOMATIC SLIDE =================
+
+// Har 3 seconds baad image change hogi
+
+setInterval(function() {
+
+    changeImage(1);
+
+}, 3000);
