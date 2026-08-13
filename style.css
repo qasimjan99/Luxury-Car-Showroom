@@ -395,115 +395,7 @@ Indicators .carousel-indicators [data-bs-target] {
   transform: scale(0.975);
 }
 
-/* .button {
-  --width: 100px;
-  --height: 35px;
-  --tooltip-height: 35px;
-  --tooltip-width: 90px;
-  --gap-between-tooltip-to-button: 18px;
-  --button-color: #222;
-  --tooltip-color: #fff;
-  width: var(--width);
-  height: var(--height);
-  background: var(--button-color);
-  position: relative;
-  text-align: center;
-  border-radius: 0.45em;
-  font-family: "Arial";
-  transition: background 0.3s;
-}
-
-.button::before {
-  position: absolute;
-  content: attr(data-tooltip);
-  width: var(--tooltip-width);
-  height: var(--tooltip-height);
-  background-color: #555;
-  font-size: 0.9rem;
-  color: #fff;
-  border-radius: .25em;
-  line-height: var(--tooltip-height);
-  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
-  left: calc(50% - var(--tooltip-width) / 2);
-}
-
-.button::after {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 0;
-  border: 10px solid transparent;
-  border-top-color: #555;
-  left: calc(50% - 10px);
-  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
-}
-
-.button::after,.button::before {
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s;
-}
-
-.text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button-wrapper,.text,.icon {
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  color: #fff;
-}
-
-.text {
-  top: 0
-}
-
-.text,.icon {
-  transition: top 0.5s;
-}
-
-.icon {
-  color: #fff;
-  top: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon svg {
-  width: 24px;
-  height: 24px;
-}
-
-.button:hover {
-  background: #222;
-}
-
-.button:hover .text {
-  top: -100%;
-}
-
-.button:hover .icon {
-  top: 0;
-}
-
-.button:hover:before,.button:hover:after {
-  opacity: 1;
-  visibility: visible;
-}
-
-.button:hover:after {
-  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
-}
-
-.button:hover:before {
-  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
-} */
+/
 
 /*=================== Black Circle + Yellow Arrows ============================*/
 
@@ -535,12 +427,6 @@ Indicators .carousel-indicators [data-bs-target] {
 
 /* *****************************************one row 4 pic Carousel 1,2********************************* */
 
-
-/* Section Title
-h2 {
-  font-weight: 700;
-  color: #333;
-}
 
 /* Carousel Images */
 #pic img {
@@ -2018,206 +1904,311 @@ iframe {
 
 /*************************** care 1 Carousel **********************/
 
-/* ================= CAR CARD ================= */
+/* =========================================================
+   CAR 1 CAROUSEL
+   Responsive: Mobile + Tablet + Laptop + Computer
+   ========================================================= */
 
-.car-card {
-    width: 100%;
-    max-width: 1200px;
-    margin: 20px auto;
-    background: #ffffff;
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-}
-
-
-/* ================= CAROUSEL ================= */
-
-.carousel {
+#car1Carousel {
     width: 100%;
     height: 500px;
     position: relative;
     overflow: hidden;
     background: #111;
+    margin: 0;
+    padding: 0;
 }
 
-
-/* ================= IMAGES ================= */
-
-.carousel-image {
+/* Images */
+#car1Carousel .carousel-image {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: block;
 
     opacity: 0;
-    transition: opacity 0.6s ease-in-out;
+    visibility: hidden;
+    transition: opacity 0.6s ease;
 }
 
-
-/* Active Image */
-
-.carousel-image.active {
+/* Active image */
+#car1Carousel .carousel-image.active {
     opacity: 1;
+    visibility: visible;
 }
 
 
-/* ================= ARROWS ================= */
+/* =========================================================
+   LEFT / RIGHT ARROWS
+   ========================================================= */
 
-.carousel-btn {
+#car1Carousel .carousel-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 
-    width: 48px;
-    height: 48px;
+    width: 50px;
+    height: 50px;
 
     border: none;
-    border-radius: 20%;
+    border-radius: 50%;
 
     background: rgba(0, 0, 0, 0.75);
     color: white;
 
     font-size: 28px;
-
-    cursor: pointer;
+    line-height: 50px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
+    cursor: pointer;
     z-index: 10;
 
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
-
-/* Left */
-
-.carousel-btn.prev {
-    left: 20px;
-}
-
-
-/* Right */
-
-.carousel-btn.next {
-    right: 20px;
-}
-
-
-/* Hover */
-
-.carousel-btn:hover {
-    background: #000;
+#car1Carousel .carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.95);
     transform: translateY(-50%) scale(1.08);
 }
 
 
-/* ================= DOTS ================= */
+/* Left Arrow */
+#car1Carousel .carousel-btn.prev {
+    left: 25px;
+}
 
-.carousel-dots {
+
+/* Right Arrow */
+#car1Carousel .carousel-btn.next {
+    right: 25px;
+}
+
+
+/* =========================================================
+   DOTS
+   ========================================================= */
+
+#CAR1 .carousel-dots {
+    width: 100%;
     height: 45px;
 
     display: flex;
     align-items: center;
     justify-content: center;
-
     gap: 10px;
 
-    background: #ffffff;
+    background: white;
 }
 
-
-/* Dot */
-
-.dot {
+#CAR1 .carousel-dots .dot {
     width: 10px;
     height: 10px;
 
+    border-radius: 50%;
     background: #ccc;
 
-    border-radius: 50%;
-
     cursor: pointer;
-
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
-
-/* Active Dot */
-
-.dot.active {
-    background: #111;
+#CAR1 .carousel-dots .dot.active {
+    background: #222;
     transform: scale(1.2);
 }
 
+#CAR1 .carousel-dots .dot:hover {
+    background: #555;
+}
 
-/* ================= TABLET ================= */
 
-@media (max-width: 768px) {
+/* =========================================================
+   LARGE COMPUTER SCREENS
+   1200px+
+   ========================================================= */
 
-    .car-card {
-        width: 100%;
-        margin: 15px auto;
-        border-radius: 10px;
+@media (min-width: 1200px) {
+
+    #car1Carousel {
+        height: 550px;
     }
 
-    .carousel {
-        height: 400px;
+    #car1Carousel .carousel-btn {
+        width: 55px;
+        height: 55px;
+        font-size: 30px;
     }
 
-    .carousel-btn {
-        width: 42px;
-        height: 42px;
-        font-size: 23px;
+    #car1Carousel .carousel-btn.prev {
+        left: 30px;
     }
 
-    .carousel-btn.prev {
-        left: 12px;
-    }
-
-    .carousel-btn.next {
-        right: 12px;
+    #car1Carousel .carousel-btn.next {
+        right: 30px;
     }
 }
 
 
-/* ================= MOBILE ================= */
+/* =========================================================
+   LAPTOP
+   992px - 1199px
+   ========================================================= */
 
-@media (max-width: 480px) {
+@media (min-width: 992px) and (max-width: 1199px) {
 
-    .carousel {
-        height: 280px;
+    #car1Carousel {
+        height: 480px;
     }
 
-    .carousel-btn {
+    #car1Carousel .carousel-btn {
+        width: 48px;
+        height: 48px;
+        font-size: 26px;
+    }
+
+    #car1Carousel .carousel-btn.prev {
+        left: 22px;
+    }
+
+    #car1Carousel .carousel-btn.next {
+        right: 22px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   768px - 991px
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    #car1Carousel {
+        height: 420px;
+    }
+
+    #car1Carousel .carousel-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 24px;
+    }
+
+    #car1Carousel .carousel-btn.prev {
+        left: 18px;
+    }
+
+    #car1Carousel .carousel-btn.next {
+        right: 18px;
+    }
+
+    #CAR1 .carousel-dots {
+        height: 40px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   576px - 767px
+   ========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    #car1Carousel {
+        height: 330px;
+    }
+
+    #car1Carousel .carousel-btn {
+        width: 42px;
+        height: 42px;
+        font-size: 22px;
+    }
+
+    #car1Carousel .carousel-btn.prev {
+        left: 12px;
+    }
+
+    #car1Carousel .carousel-btn.next {
+        right: 12px;
+    }
+
+    #CAR1 .carousel-dots {
+        height: 38px;
+    }
+
+    #CAR1 .carousel-dots .dot {
+        width: 9px;
+        height: 9px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   0 - 575px
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    #car1Carousel {
+        height: 260px;
+    }
+
+    #car1Carousel .carousel-btn {
         width: 38px;
         height: 38px;
         font-size: 20px;
     }
 
-    .carousel-btn.prev {
+    #car1Carousel .carousel-btn.prev {
         left: 8px;
     }
 
-    .carousel-btn.next {
+    #car1Carousel .carousel-btn.next {
         right: 8px;
     }
 
-    .carousel-dots {
-        height: 40px;
+    #CAR1 .carousel-dots {
+        height: 35px;
+        gap: 8px;
     }
 
-    .dot {
+    #CAR1 .carousel-dots .dot {
         width: 8px;
         height: 8px;
     }
 }
 
+
+/* =========================================================
+   VERY SMALL MOBILE
+   400px se neeche
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    #car1Carousel {
+        height: 230px;
+    }
+
+    #car1Carousel .carousel-btn {
+        width: 34px;
+        height: 34px;
+        font-size: 18px;
+    }
+
+    #car1Carousel .carousel-btn.prev {
+        left: 6px;
+    }
+
+    #car1Carousel .carousel-btn.next {
+        right: 6px;
+    }
+}
 /* ========================car1.html page CARS DETAIL PAGE circle PICTURE ========================== */
 
 .wrapper {
