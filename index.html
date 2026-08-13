@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LUXURY CAR SHOWROOM</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+  <!--************************************ navbar *****************************-->
+
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <img src="image/showroom logo.PNG" height="60px">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">
+              <i class="bi bi-house-door"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="aboutus.html">
+              <i class="bi bi-info-circle"></i>
+              <span>About Us</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carsdetail.html">
+              <i class="bi bi-car-front-fill"></i>
+              <span>About Cars</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service.html">
+              <i class="bi bi-tools"></i>
+              <span>Services</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">
+              <i class="bi bi-telephone"></i>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="d-flex">
+          <button id="darkModeToggle" class="btn btn-dark btn-sm ms-3 px-2 py-1">
+            🌙
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <section id="cars" class="py-0 bg-light">
+    <div class="text-center" id="car">
+      <h2 class="mb-4">Luxury Car Collection</h2>
+
+      <div id="carCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="4"></button>
+          <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="5"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="image/Honda Civic (1).jpg" class="d-block w-100 animated-slide" alt="mercedes-c-class">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+              <h5>Honda Civic</h5>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="image/Jeep Wrangler(2).jpg" class="d-block w-100 animated-slide" alt="jeep-wrangler">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+              <h5>Jeep Wrangler</h5>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="image/Ford Expedition (3).jpg" class="d-block w-100 animated-slide" alt="toyota-landcruiser">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+              <h5>Ford Expedition</h5>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="image/Toyota Land Cruiser(4).jpg" class="d-block w-100 animated-slide" alt="ford-raptor">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+              <h5>Toyota Land Cruiser</h5>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="image/Toyota Land Cruiser Prado card.jpeg" class="d-block w-100 animated-slide" alt="Ferrari 488">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+              <h5>Toyota Land Cruiser Prado </h5>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="image/Hyundai Tucson(6).jpg" class="d-block w-100 animated-slide" alt="Porsche 911">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+              <h5>Hyundai Tucson</h5>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ********************************OUR CAR COLLECTION******************************** -->
+
+
+  <section id="pic" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Our Car Collection</h2>
+
+      <div id="carCarousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div id="card">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carCarousel1" data-bs-slide-to="0" class="active"
+              aria-current="true"></button>
+            <button type="button" data-bs-target="#carCarousel1" data-bs-slide-to="1"></button>
+          </div>
+
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row g-4">
+
+                <!-- BMW X5 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                  <div class="card shadow h-100">
+                    <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?q=80&w=800&auto=format"
+                      class="card-img-top" alt="BMW X5">
+                    <div class="card-body">
+                      <h5 class="card-title">BMW X5</h5>
+                      <button class="button" onclick="window.location.href='carsdetail.html#bmw-x5';">
+                        <div class="button-outer">
+                          <div class="button-inner">
+                            <span> Cars Details </span>
+                          </div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Audi A6 Fixed Card Code -->
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                  <div class="card shadow h-100">
+                    <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?q=80&w=800&auto=format"
+                      class="card-img-top" alt="Audi A6">
+                    <div class="card-body text-center">
+                      <h5 class="card-title fw-bold">Audi A6</h5>
+
+                      <!-- Button ki jagah Anchor <a> tag use karein -->
+                      <a href="carsdetail.html#audi-a6" class="button text-decoration-none d-inline-block mt-2">
+                        <div class="button-outer">
+                          <div class="button-inner">
+                            <span> Cars Details </span>
+                          </div>
+                        </div>
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- Mercedes C-Class -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                  <div class="card shadow h-100">
+                    <img src="image/Mercedes C-Class 2.png"
+                      class="card-img-top" alt="Mercedes C-Class">
+                    <div class="card-body">
+                      <h5 class="card-title">Mercedes C-Class</h5>
+                      <button class="button" onclick="window.location.href='carsdetail.html#mercedes-c-class';">
+                        <div class="button-outer">
+                          <div class="button-inner">
+                            <span> Cars Details </span>
+                          </div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Hyundai Kona -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                  <div class="card shadow h-100">
+                    <img src="image/Hyundai Kona5.jpg" class="card-img-top" alt="Hyundai Kona">
+                    <div class="card-body">
+                      <h5 class="card-title">Hyundai Kona</h5>
+                      <button class="button" onclick="window.location.href='carsdetail.html#hyundai-kona';">
+                        <div class="button-outer">
+                          <div class="button-inner">
+                            <span> Cars Details </span>
+                          </div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row g-4">
+
+                <!-- Toyota Camry -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                  <div class="card shadow h-100">
+                    <img src="image/Toyota Camry 7.jpg" class="card-img-top" alt="Toyota Camry">
+                    <div class="card-body">
+                      <h5 class="card-title">Toyota Camry</h5>
+                      <button class="button" onclick="window.location.href='carsdetail.html#toyota-camry';">
+                        <div class="button-outer">
+                          <div class="button-inner">
+                            <span> Cars Details </span>
+                          </div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Mitsubishi Pajero -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                  <div class="card shadow h-100">
+                    <img src="image/Mitsubishi Pajero 8.jpg" class="card-img-top" alt="Mitsubishi Pajero">
+                    <div class="card-body">
+                      <h5 class="card-title">Mitsubishi Pajero</h5>
+                      <button class="button" onclick="window.location.href='carsdetail.html#mitsubishi-pajero';">
+                        <div class="button-outer">
+                          <div class="button-inner">
+                            <span> Cars Details </span>
+                          </div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Toyota Corolla -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                  <div class="card shadow h-100">
+                    <img src="image/Toyota Corolla9.jpg" class="card-img-top" alt="Toyota Corolla">
+                    <div class="card-body">
+                      <h5 class="card-title">Toyota Corolla</h5>
+                      <button class="button" onclick="window.location.href='carsdetail.html#toyota-corolla';">
+                        <div class="button-outer">
+                          <div class="button-inner">
+                            <span> Cars Details </span>
+                          </div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Range Rover Sport -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                  <div class="card shadow h-100">
+                    <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?q=80&w=800&auto=format"
+                      class="card-img-top" alt="Range Rover Sport">
+                    <div class="card-body">
+                      <h5 class="card-title">Range Rover Sport</h5>
+                      <button class="button" onclick="window.location.href='carsdetail.html#range-rover-sport';">
+                        <div class="button-outer">
+                          <div class="button-inner">
+                            <span> Cars Details </span>
+                          </div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carCarousel1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carCarousel1" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+  </section>
+
+  <!-- ************************************one row 4 pic carousel 2**************************************** -->
+  <!-- 6 Cars Carousel -->
+  <section id="pic" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Our Car Collection</h2>
+
+      <div id="carCarousel2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carCarousel2" data-bs-slide-to="0" class="active"
+            aria-current="true"></button>
+          <button type="button" data-bs-target="#carCarousel2" data-bs-slide-to="1"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+
+          <!-- Slide 1 (4 Cars) -->
+          <div class="carousel-item active">
+            <div class="row g-4">
+
+              <!-- Toyota C-HR -->
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card shadow h-100">
+                  <img src="image/Toyota C-HR home  (1).jpg" class="card-img-top" alt="Toyota C-HR">
+                  <div class="card-body">
+                    <h5 class="card-title">Toyota C-HR</h5>
+                    <center>
+                      <button class="button" onclick="window.location.href='carsdetail.html#toyota-chr';">
+                        <div class="button-outer">
+                          <div class="button-inner">
+                            <span> Cars Details </span>
+                          </div>
+                        </div>
+                      </button>
+                    </center>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Suzuki Swift -->
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card shadow h-100">
+                  <img src="image/Suzuki Swift home  (2).jpg" class="card-img-top" alt="Suzuki Swift">
+                  <div class="card-body">
+                    <h5 class="card-title">Suzuki Swift</h5>
+                    <center>
+                      <button class="button" onclick="window.location.href='carsdetail.html#suzuki-swift';">
+                        <div class="button-outer">
+                          <div class="button-inner">
+                            <span> Cars Details </span>
+                          </div>
+                        </div>
+                      </button>
+                    </center>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Porsche Cayenne -->
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card shadow h-100">
+                  <img src="image/Porsche Cayenne home  (3).jpg" class="card-img-top" alt="Porsche Cayenne">
+                  <div class="card-body">
+                    <h5 class="card-title">Porsche Cayenne</h5>
+                    <center>
+                      <button class="button" onclick="window.location.href='carsdetail.html#porsche-cayenne';">
+                        <div class="button-outer">
+                          <div class="button-inner">
+                            <span> Cars Details </span>
+                          </div>
+                        </div>
+                      </button>
+                    </center>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Toyota Corolla -->
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card shadow h-100">
+                  <img src="image/Toyota Corolla home  (4).jpg" class="card-img-top" alt="Toyota Corolla">
+                  <div class="card-body">
+                    <h5 class="card-title">Toyota Corolla</h5>
+                    <center>
+                      <button class="button" onclick="window.location.href='carsdetail.html#toyota-corolla';">
+                        <div class="button-outer">
+                          <div class="button-inner">
+                            <span> Cars Details </span>
+                          </div>
+                        </div>
+                      </button>
+                    </center>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 (4 Cars) -->
+          <div class="carousel-item">
+            <div class="row g-4">
+
+              <!-- Ford F-150 -->
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card shadow h-100">
+                  <img src="image/Ford F-150 home (5).jpg" class="card-img-top" alt="Ford F-150">
+                  <div class="card-body">
+                    <h5 class="card-title">Ford F-150</h5>
+                    <center>
+                      <button class="button" onclick="window.location.href='carsdetail.html#ford-f150';">
+                        <div class="button-outer">
+                          <div class="button-inner">
+                            <span> Cars Details </span>
+                          </div>
+                        </div>
+                      </button>
+                    </center>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Dodge RAM -->
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card shadow h-100">
+                  <img src="image/Dodge RAM home  (6).jpg" class="card-img-top" alt="Dodge RAM">
+                  <div class="card-body">
+                    <h5 class="card-title">Dodge RAM</h5>
+                    <center>
+                      <button class="button" onclick="window.location.href='carsdetail.html#dodge-ram';">
+                        <div class="button-outer">
+                          <div class="button-inner">
+                            <span> Cars Details </span>
+                          </div>
+                        </div>
+                      </button>
+                    </center>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Ford F150 (Model 2) -->
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card shadow h-100">
+                  <img src="image/Ford F-150 home (7).jpg" class="card-img-top" alt="Ford F150">
+                  <div class="card-body">
+                    <h5 class="card-title">Ford F150</h5>
+                    <center>
+                      <button class="button" onclick="window.location.href='carsdetail.html#ford-f150-2';">
+                        <div class="button-outer">
+                          <div class="button-inner">
+                            <span> Cars Details </span>
+                          </div>
+                        </div>
+                      </button>
+                    </center>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Ford Mustang -->
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card shadow h-100">
+                  <img src="image/Ford Mustang home (8).jpg" class="card-img-top" alt="Ford Mustang">
+                  <div class="card-body">
+                    <h5 class="card-title">Ford Mustang</h5>
+                    <center>
+                      <button class="button" onclick="window.location.href='carsdetail.html#ford-mustang';">
+                        <div class="button-outer">
+                          <div class="button-inner">
+                            <span> Cars Details </span>
+                          </div>
+                        </div>
+                      </button>
+                    </center>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carCarousel2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carCarousel2" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!--************************************** About Us Section ************************-->
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1000&auto=format"
+            class="img-fluid rounded shadow-lg" alt="Showroom">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">
+            <i class="bi bi-building text-danger"></i> About Us
+          </h2>
+          <p class="text-muted">
+            Welcome to <strong>LUXURY CAR SHOWROOM</strong>, your trusted destination for premium and luxury cars.
+            Since 1995, we have been delivering top-notch vehicles with exceptional service and customer satisfaction.
+            Our mission is to provide world-class cars with unmatched reliability and value.
+          </p>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check-circle-fill text-success"></i> 25+ Years of Experience</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 1000+ Happy Customers</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> Official Dealers of Top Brands</li>
+          </ul>
+          <a href="aboutus.html" class="btn btn-danger mt-3">Explore Cars</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--*************************** Services Section ********************-->
+
+  <section class="py-5 bg-light">
+    <div class="container">
+      <center>
+        <h2 class="fw-bold mb-5">
+          <i class="bi bi-tools text-danger"></i> Our Services
+        </h2>
+      </center>
+      <div class="row g-4 justify-content-center">
+
+        <!-- Card 1 -->
+        <div class="col-12 col-sm-6 col-lg-3 mb-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="bi bi-cash-coin text-success display-5 mb-3"></i>
+                <h5>Car Financing</h5>
+              </div>
+              <div class="flip-card-back d-flex align-items-center justify-content-center text-center">
+                <p class="text-white"><b>Flexible car financing plans to make your dream car affordable.</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-sm-6 col-lg-3 mb-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="bi bi-speedometer2 text-danger display-4 mb-3"></i>
+                <h5>Test Drive</h5>
+              </div>
+              <div class="flip-card-back d-flex align-items-center justify-content-center text-center">
+                <p class="text-white"> <b> Book a free test drive and experience the thrill of driving.</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-sm-6 col-lg-3 mb-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="bi bi-tools text-danger display-4 mb-3"></i>
+                <h5>Maintenance</h5>
+              </div>
+              <div class="flip-card-back d-flex align-items-center justify-content-center text-center">
+                <p class="text-white"> <b> Reliable maintenance services to keep your car in top shape.</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-12 col-sm-6 col-lg-3 mb-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="bi bi-arrow-repeat text-danger display-4 mb-3"></i>
+                <h5>Trade-In</h5>
+              </div>
+              <div class="flip-card-back d-flex align-items-center justify-content-center text-center">
+                <p class="text-white"> <b> Upgrade your car with our hassle-free trade-in program.</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ****************************************Our Gallery***************************************** -->
+
+  <section class="py-5" id="gallery">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-5">
+        <i class="bi bi-images text-danger"></i> Our Gallery
+      </h2>
+      <div class="row g-3">
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <img src="image/Gall 4.jpg" class="img-fluid rounded shadow" alt="Car 4">
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <img src="image/Gall (5).png" class="img-fluid rounded shadow" alt="Car 5">
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <img src="image/Gall (6).png" class="img-fluid rounded shadow" alt="Car 6">
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <img src="image/Gall (1).png" class="img-fluid rounded shadow" alt="Car 1">
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <img src="image/Gall (2).png" class="img-fluid rounded shadow" alt="Car 2">
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <img src="image/Gall (3).png" class="img-fluid rounded shadow" alt="Car 3">
+        </div>
+
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <img src="image/Dodge RAM home  (6).jpg" class="img-fluid rounded shadow" alt="Car 1">
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <img src="image/Hyundai Kona5.jpg" class="img-fluid rounded shadow" alt="Car 2">
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <img src="image/Suzuki Swift home  (2).jpg" class="img-fluid rounded shadow" alt="Car 3">
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <img src="image/Toyota Land Cruiser Prado card.jpeg" class="img-fluid rounded shadow" alt="Car 4">
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <img src="image/Honda Civic (1).jpg" class="img-fluid rounded shadow" alt="Car 5">
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <img src="image/Toyota Corolla9.jpg" class="img-fluid rounded shadow" alt="Car 6">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--********************************* Footer *************************************-->
+
+  <footer class="footer bg-dark text-light pt-5 pb-4">
+    <div class="container">
+      <div class="row">
+
+        <!-- Company Info -->
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <h5 class="fw-bold text-warning mb-3">CarShowroom</h5>
+          <p>Your trusted partner in finding the perfect car. We bring luxury, comfort, and performance together for
+            you.</p>
+          <div class="social-links mt-3" style="display:flex; gap:30px;">
+            <a href="https://www.facebook.com/" target="_blank">
+              <i class="bi bi-facebook fs-4"></i>
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="bi bi-instagram fs-4"></i>
+            </a>
+
+            <a href="https://Whatsapp.com/" target="_blank">
+              <i class="bi bi-whatsapp fs-4"></i>
+            </a>
+          </div>
+        </div>
+
+
+        <!-- Quick Links -->
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <h5 class="fw-bold text-warning mb-3">Quick Links</h5>
+          <ul class="list-unstyled d-grid gap-2">
+            <li><a href="index.html" class="footer-btn">Home</a></li>
+            <li><a href="aboutus.html" class="footer-btn">About Us</a></li>
+            <li><a href="carsdetail.html" class="footer-btn">About Cars</a></li>
+            <li><a href="service.html" class="footer-btn">Services</a></li>
+            <li><a href="contactus.html" class="footer-btn">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Partners -->
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <h5 class="fw-bold text-warning mb-3">Our Partners</h5>
+          <div class="d-flex flex-wrap gap-4 align-items-center">
+
+            <div class="partner-item text-center">
+              <div class="partner-name">Toyota</div>
+              <img src="image/toyota.PNG" width="60" alt="Toyota" class="partner-logo">
+            </div>
+
+            <div class="partner-item text-center">
+              <div class="partner-name">Honda</div>
+              <img src="image/honda.PNG" width="60" alt="Honda" class="partner-logo">
+            </div>
+
+            <div class="partner-item text-center">
+              <div class="partner-name">BMW</div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" width="60" alt="BMW"
+                class="partner-logo">
+            </div>
+
+            <div class="partner-item text-center">
+              <div class="partner-name">Mercedes</div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg" width="60" alt="Mercedes"
+                class="partner-logo">
+            </div>
+
+            <div class="partner-item text-center">
+              <div class="partner-name">Ford</div>
+              <img src="image/ford.PNG" width="80" alt="Ford" class="partner-logo">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <h5 class="fw-bold text-warning mb-3">Contact Us</h5>
+
+          <p class="contact-item">
+            <i class="bi bi-geo-alt-fill text-warning"></i> Ring Road, Peshawar, Pakistan
+          </p>
+
+          <p class="contact-item">
+            <i class="bi bi-telephone-fill text-warning"></i> +92 300 1234567
+          </p>
+
+          <p class="contact-item">
+            <i class="bi bi-envelope-fill text-warning"></i> info@carshowroom.com
+          </p>
+        </div>
+
+
+      </div>
+
+      <hr class="border-light">
+      <div class="text-center">
+        <p class="mb-0">Copyright © All Right Reserved Luxury Cars Showroom 2026 </p>
+        Designed ❤️ by <strong>M. Qasim Jan</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <!--=================== For Dark mode button ================-->
+  <script>
+    document.getElementById("darkModeToggle").onclick = function () {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+  <!-- ************************************************************************ -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
