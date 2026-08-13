@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav text-center">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">
+                        <a class="nav-link " href="index.html">
                             <i class="bi bi-house-door"></i>
                             <span>Home</span>
                         </a>
@@ -38,8 +38,8 @@
                             <span>About Us</span>
                         </a>
                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="carsdetail.html">
+                    <li class="nav-item">
+                        <a class="nav-link " href="carsdetail.html">
                             <i class="bi bi-car-front-fill"></i>
                             <span>About Cars</span>
                         </a>
@@ -67,112 +67,321 @@
         </div>
     </nav>
 
-    <!-- ======================= CARDS IN CIRCLE FOR MORE DETAILS======================== -->
 
-  <div class="wrapper">
-    <div class="inner" style="--quantity: 10;">
-        
-        <!-- Card 0 -->
-        <div class="CAR1" style="--index: 0;--color-card: 142, 249, 252;">
-            <div class="img">
-                <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?q=80&w=800&auto=format" alt="BMW X5">
-            </div>
-        </div>
 
-        <!-- Card 1 -->
-        <div class="CAR1" style="--index: 1;--color-card: 142, 252, 204;">
-            <div class="img">
-                <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?q=80&w=800&auto=format" alt="Audi A6">
-            </div>
-        </div>
+    <!--==========****************============ Carousel ==============*********************===============-->
 
-        <!-- Card 2 -->
-        <div class="CAR1" style="--index: 2;--color-card: 142, 252, 157;">
-            <div class="img">
-                <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=800&auto=format" alt="Mercedes C-Class">
-            </div>
-        </div>
+<!-- ================= CAR 1 ================= -->
+<div class="container-fluid p-0"  id="CAR1">
+<!-- <div class="car-card"> -->
 
-        <!-- Card 3 -->
-        <div class="CAR1" style="--index: 3;--color-card: 215, 252, 142;">
-            <div class="img">
-                <img src="image/Hyundai Kona5.jpg" alt="Hyundai Kona">
-            </div>
-        </div>
+    <div class="carousel">
 
-        <!-- Card 4 -->
-        <div class="CAR1" style="--index: 4;--color-card: 252, 252, 142;">
-            <div class="img">
-                <img src="image/Toyota Camry 7.jpg" alt="Toyota Camry">
-            </div>
-        </div>
+        <!-- Images -->
+        <img src="image/Honda Civic (1).jpg"
+             class="carousel-image active"
+             alt="Honda Civic 1">
 
-        <!-- Card 5 -->
-        <div class="CAR1" style="--index: 5;--color-card: 252, 208, 142;">
-            <div class="img">
-                <img src="image/Mitsubishi Pajero 8.jpg" alt="Mitsubishi Pajero">
-            </div>
-        </div>
+        <img src="image/Ford F-150 home (5).jpg"
+             class="carousel-image"
+             alt="Ford F-150">
 
-        <!-- Card 6 -->
-        <div class="CAR1" style="--index: 6;--color-card: 252, 142, 142;">
-            <div class="img">
-                <img src="image/Toyota Corolla9.jpg" alt="Toyota Corolla">
-            </div>
-        </div>
+        <img src="image/Ford Mustang home (8).jpg"
+             class="carousel-image"
+             alt="Ford Mustang">
 
-        <!-- Card 7 -->
-        <div class="CAR1" style="--index: 7;--color-card: 252, 142, 239;">
-            <div class="img">
-                <img src="image/Suzuki Swift home  (2).jpg" alt="Suzuki Swift">
-            </div>
-        </div>
+        <img src="image/Dodge RAM home  (6).jpg"
+             class="carousel-image"
+             alt="Dodge RAM">
 
-        <!-- Card 8 -->
-        <div class="CAR1" style="--index: 8;--color-card: 204, 142, 252;">
-            <div class="img">
-                <img src="image/Porsche Cayenne home  (3).jpg" alt="Porsche Cayenne">
-            </div>
-        </div>
+        <!-- Left Arrow -->
+        <button class="carousel-btn prev" onclick="changeImage(-1)">
+            ❮
+        </button>
 
-        <!-- Card 9 -->
-        <div class="CAR1" style="--index: 9;--color-card: 142, 202, 252;">
-            <div class="img">
-                <img src="image/Toyota C-HR home  (1).jpg" alt="Toyota C-HR Front">
-            </div>
-        </div>
+        <!-- Right Arrow -->
+        <button class="carousel-btn next" onclick="changeImage(1)">
+            ❯
+        </button>
 
     </div>
+
+    <!-- Dots -->
+    <div class="carousel-dots">
+        <span class="dot active" onclick="showImage(0)"></span>
+        <span class="dot" onclick="showImage(1)"></span>
+        <span class="dot" onclick="showImage(2)"></span>
+        <span class="dot" onclick="showImage(3)"></span>
+    </div>
+
+</div>
 </div>
 
+    <!-- ======================= CARDS IN CIRCLE FOR MORE DETAILS======================== -->
+
+    <div class="wrapper">
+        <div class="inner" style="--quantity: 5;">
 
 
+
+            <!-- Card 1 -->
+            <div class="CAR1" style="--index: 1;--color-card: 142, 252, 204;">
+                <div class="img">
+                    <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?q=80&w=800&auto=format"
+                        alt="Audi A6">
+                </div>
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="CAR1" style="--index: 2;--color-card: 215, 252, 142;">
+                <div class="img">
+                    <img src="image/Hyundai Kona5.jpg" alt="Hyundai Kona">
+                </div>
+            </div>
+
+
+
+            <!-- Card 5 -->
+            <div class="CAR1" style="--index: 3;--color-card: 252, 208, 142;">
+                <div class="img">
+                    <img src="image/Mitsubishi Pajero 8.jpg" alt="Mitsubishi Pajero">
+                </div>
+            </div>
+
+
+
+            <!-- Card 7 -->
+            <div class="CAR1" style="--index: 4;--color-card: 252, 142, 239;">
+                <div class="img">
+                    <img src="image/Suzuki Swift home  (2).jpg" alt="Suzuki Swift">
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="CAR1" style="--index: 5;--color-card: 142, 202, 252;">
+                <div class="img">
+                    <img src="image/Toyota C-HR home  (1).jpg" alt="Toyota C-HR Front">
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <section id="toyota-chr" class="car-section bg-white p-4 rounded shadow-sm">
-    
+
 
         <h2 class="fw-bold text-primary mb-3">Toyota C-HR</h2>
         <p class="text-muted">A subcompact crossover SUV featuring a bold, futuristic exterior design, agile handling,
             and efficient performance.</p>
 
+
+        <!--*******************************- Details in Table -*********************************-->
+
         <div class="row mt-4">
-            <div class="col-md-6">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><strong>Engine:</strong> 2.0L 4-Cylinder DOHC</li>
-                    <li class="list-group-item"><strong>Horsepower:</strong> 144 HP @ 6,100 rpm</li>
-                    <li class="list-group-item"><strong>Transmission:</strong> Continuously Variable (CVT)</li>
-                    <li class="list-group-item"><strong>Drivetrain:</strong> Front-Wheel Drive (FWD)</li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><strong>Fuel Economy:</strong> 29 MPG Combined</li>
-                    <li class="list-group-item"><strong>Seating Capacity:</strong> 5 Passengers</li>
-                    <li class="list-group-item"><strong>Safety:</strong> Toyota Safety Sense P</li>
-                    <li class="list-group-item"><strong>Price Range:</strong> $24,000 - $29,000</li>
-                </ul>
+            <div class="col-12">
+
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-hover align-middle">
+
+                        <thead class="table-dark">
+                            <tr>
+                                <th>S.No</th>
+                                <th>Name</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>1</td>
+                                <td>Engine</td>
+                                <td>2.0L 4-Cylinder DOHC</td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>Horsepower</td>
+                                <td>144 HP @ 6,100 rpm</td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>Transmission</td>
+                                <td>Continuously Variable Transmission (CVT)</td>
+                            </tr>
+
+                            <tr>
+                                <td>4</td>
+                                <td>Drivetrain</td>
+                                <td>Front-Wheel Drive (FWD)</td>
+                            </tr>
+
+                            <tr>
+                                <td>5</td>
+                                <td>Fuel Economy</td>
+                                <td>29 MPG Combined</td>
+                            </tr>
+
+                            <tr>
+                                <td>6</td>
+                                <td>Seating Capacity</td>
+                                <td>5 Passengers</td>
+                            </tr>
+
+                            <tr>
+                                <td>7</td>
+                                <td>Safety</td>
+                                <td>Toyota Safety Sense P</td>
+                            </tr>
+
+                            <tr>
+                                <td>8</td>
+                                <td>Price Range</td>
+                                <td>$24,000 - $29,000</td>
+                            </tr>
+
+                            <tr>
+                                <td>9</td>
+                                <td>Body Type</td>
+                                <td>Compact SUV / Crossover</td>
+                            </tr>
+
+                            <tr>
+                                <td>10</td>
+                                <td>Fuel Type</td>
+                                <td>Petrol / Gasoline</td>
+                            </tr>
+
+                            <tr>
+                                <td>11</td>
+                                <td>Engine Displacement</td>
+                                <td>2.0 Liters</td>
+                            </tr>
+
+                            <tr>
+                                <td>12</td>
+                                <td>Cylinders</td>
+                                <td>4-Cylinder</td>
+                            </tr>
+
+                            <tr>
+                                <td>13</td>
+                                <td>Maximum Torque</td>
+                                <td>Approximately 139 lb-ft</td>
+                            </tr>
+
+                            <tr>
+                                <td>14</td>
+                                <td>Fuel Tank Capacity</td>
+                                <td>Approximately 13.2 Gallons</td>
+                            </tr>
+
+                            <tr>
+                                <td>15</td>
+                                <td>Drive Modes</td>
+                                <td>Normal, Sport and Eco Modes</td>
+                            </tr>
+
+                            <tr>
+                                <td>16</td>
+                                <td>Front Suspension</td>
+                                <td>Independent MacPherson Strut</td>
+                            </tr>
+
+                            <tr>
+                                <td>17</td>
+                                <td>Rear Suspension</td>
+                                <td>Torsion Beam / Independent depending on variant</td>
+                            </tr>
+
+                            <tr>
+                                <td>18</td>
+                                <td>Brakes</td>
+                                <td>Ventilated Disc Front / Disc Rear</td>
+                            </tr>
+
+                            <tr>
+                                <td>19</td>
+                                <td>Wheels</td>
+                                <td>Alloy Wheels</td>
+                            </tr>
+
+                            <tr>
+                                <td>20</td>
+                                <td>Air Conditioning</td>
+                                <td>Automatic Climate Control</td>
+                            </tr>
+
+                            <tr>
+                                <td>21</td>
+                                <td>Infotainment</td>
+                                <td>Touchscreen Display with Multimedia System</td>
+                            </tr>
+
+                            <tr>
+                                <td>22</td>
+                                <td>Connectivity</td>
+                                <td>Bluetooth, USB and Smartphone Connectivity</td>
+                            </tr>
+
+                            <tr>
+                                <td>23</td>
+                                <td>Camera</td>
+                                <td>Rear-View Camera</td>
+                            </tr>
+
+                            <tr>
+                                <td>24</td>
+                                <td>Parking Assistance</td>
+                                <td>Parking Sensors / Assistance depending on variant</td>
+                            </tr>
+
+                            <tr>
+                                <td>25</td>
+                                <td>Airbags</td>
+                                <td>Multiple Airbag System</td>
+                            </tr>
+
+                            <tr>
+                                <td>26</td>
+                                <td>Safety Features</td>
+                                <td>Pre-Collision System, Lane Departure Alert and Automatic High Beams</td>
+                            </tr>
+
+                            <tr>
+                                <td>27</td>
+                                <td>Interior</td>
+                                <td>Premium Comfortable Interior with Modern Dashboard</td>
+                            </tr>
+
+                            <tr>
+                                <td>28</td>
+                                <td>Doors</td>
+                                <td>5 Doors</td>
+                            </tr>
+
+                            <tr>
+                                <td>29</td>
+                                <td>Seating Layout</td>
+                                <td>2 Front + 3 Rear Seats</td>
+                            </tr>
+
+                            <tr>
+                                <td>30</td>
+                                <td>Vehicle Class</td>
+                                <td>Compact Crossover SUV</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                </div>
+
             </div>
         </div>
+
     </section>
 
 
@@ -211,6 +420,7 @@
                     <ul class="list-unstyled d-grid gap-2">
                         <li><a href="index.html" class="footer-btn">Home</a></li>
                         <li><a href="aboutus.html" class="footer-btn">About Us</a></li>
+                        <li><a href="carsdetail.html" class="footer-btn">About Cars</a></li>
                         <li><a href="service.html" class="footer-btn">Services</a></li>
                         <li><a href="contactus.html" class="footer-btn">Contact</a></li>
                     </ul>
